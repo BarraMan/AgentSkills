@@ -6,7 +6,7 @@ description: Process & migrate BarraMan's new media downloads.
 # BarraMan Media Catalog Migration
 
 Pipeline that classifies, renames, organizes, embeds (ID3+cover), and serves a
-media collection for BarraMan (BMV Solución y Desarrollo Tecnológico).
+media collection for BarraMan.
 
 ## Locations (all real, verified)
 - Catalog root:      `CATALOG/`
