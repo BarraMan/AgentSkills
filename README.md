@@ -17,7 +17,7 @@ credenciales ni datos personales).
 
 | Skill | Qué hace |
 |---|---|
-| **[media-catalog-migration](skills/media-catalog-migration/)** | Pipeline para **clasificar, renombrar, organizar, incrustar (ID3+portada) y servir** una colección multimedia (audio/video). Con clasificación por género (KB curada > web-search > keyword), extracción de portadas de 3 niveles, detección de colisiones y verificación "al 100%". |
+| **[news-digest](skills/news-digest/)** | Construir un **digest de noticias** (semanal/recurrente) y enviarlo por correo como **cuerpo HTML** con carátulas: recolección vía Exa, curación/dedupe por cluster, formato 3-renglones (titular / carátula hipervinculada / resumen), envío con himalaya y verificación en la carpeta `sent`. |
 | **[email-report-delivery](skills/email-report-delivery/)** | Enviar un informe/digest **como cuerpo HTML del email** (no como adjunto ni Markdown), con imágenes embebidas como **CID attachments** (no data-URI), acentos garantizados y links a la noticia completa. |
 
 ### Por qué publicamos esto
@@ -44,7 +44,7 @@ detail and **anonymized** (no paths, IPs, credentials, or personal data).
 
 | Skill | What it does |
 |---|---|
-| **[media-catalog-migration](skills/media-catalog-migration/)** | A pipeline to **classify, rename, organize, embed (ID3+cover), and serve** a multimedia collection (audio/video). Genre classification (curated KB > web-search > keyword), 3-tier cover fetching, collision detection, and a real "100% verification" routine. |
+| **[news-digest](skills/news-digest/)** | Build a **news digest** (weekly/recurring) and send it by email as an **HTML body** with cover images: collection via Exa, curation/dedupe by cluster, 3-row format (title / hyperlinked cover / summary), delivery with himalaya, and verification in the `sent` folder. |
 | **[email-report-delivery](skills/email-report-delivery/)** | Send a report/digest **as the email HTML body** (not an attachment, not Markdown), with images embedded as **CID attachments** (not data-URIs), guaranteed accents, and full-news links. |
 
 ### Why we publish this
@@ -68,9 +68,9 @@ AgentSkills/
 ├── LICENSE                            # MIT
 ├── .gitignore                         # bloqueo de secretos (defensa)
 └── skills/
-    ├── media-catalog-migration/
+    ├── news-digest/
     │   ├── SKILL.md
-    │   └── references/{catalog-bugfixes,web-player-ui}.md
+    │   └── references/{sources,curate,exa-search,formato-casa,build-send-script,himalaya-send}.md
     └── email-report-delivery/
         ├── SKILL.md
         └── references/himalaya-send.md
