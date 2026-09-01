@@ -19,6 +19,13 @@ this exact order. This is the "formato de la casa" published in
 - **HTML body, never Markdown** — Markdown renders as a plain text wall.
 - **Accents are non-negotiable** — `ñ`, `á é í ó ú` must be correct (UTF-8); never
   pre-strip to ASCII. Verify by counting accent chars in the decoded HTML.
+- **Summary (and title) in Mexican Spanish — mandatory translation:** the summary
+  (row 3) and the title (row 1) are always written in Mexican Spanish (spelling and
+  tone of MX), regardless of the source's original language. If the title/summary
+  are in another language (e.g. English), translate them to Mexican Spanish — never
+  leave them in the original language. The cover (row 2) still links to the original
+  article (in its own language). Verify that no summary or title appears in
+  English/another language in the decoded HTML.
 - **Each item must carry a link to the full article** — BarraMan's real correction: a
   10-headline digest once omitted the article URL. Expect **2 links per item** (carátula
   image + "Leer la noticia completa →"). Verify by decoding the `text/html` part
