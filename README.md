@@ -18,7 +18,6 @@ credenciales ni datos personales).
 | Skill | Qué hace |
 |---|---|
 | **[news-digest](skills/news-digest/)** | Construir un **digest de noticias** (semanal/recurrente) y enviarlo por correo como **cuerpo HTML** con carátulas: recolección vía Exa, curación/dedupe por cluster, formato 3-renglones (titular / carátula hipervinculada / resumen), envío con himalaya y verificación en la carpeta `sent`. |
-| **[email-report-delivery](skills/email-report-delivery/)** | Enviar un informe/digest **como cuerpo HTML del email** (no como adjunto ni Markdown), con imágenes embebidas como **CID attachments** (no data-URI), acentos garantizados y links a la noticia completa. |
 
 ### Por qué publicamos esto
 - **Reutilización**: cada skill es un playbook probado con bugs, "pitfalls" y
@@ -45,7 +44,6 @@ detail and **anonymized** (no paths, IPs, credentials, or personal data).
 | Skill | What it does |
 |---|---|
 | **[news-digest](skills/news-digest/)** | Build a **news digest** (weekly/recurring) and send it by email as an **HTML body** with cover images: collection via Exa, curation/dedupe by cluster, 3-row format (title / hyperlinked cover / summary), delivery with himalaya, and verification in the `sent` folder. |
-| **[email-report-delivery](skills/email-report-delivery/)** | Send a report/digest **as the email HTML body** (not an attachment, not Markdown), with images embedded as **CID attachments** (not data-URIs), guaranteed accents, and full-news links. |
 
 ### Why we publish this
 - **Reusability**: each skill is a tested playbook with real bugs, "pitfalls",
@@ -68,12 +66,9 @@ AgentSkills/
 ├── LICENSE                            # MIT
 ├── .gitignore                         # bloqueo de secretos (defensa)
 └── skills/
-    ├── news-digest/
-    │   ├── SKILL.md
-    │   └── references/{sources,curate,exa-search,formato-casa,build-send-script,himalaya-send}.md
-    └── email-report-delivery/
+    └── news-digest/
         ├── SKILL.md
-        └── references/himalaya-send.md
+        └── references/{sources,curate,exa-search,formato-casa,build-send-script,himalaya-send}.md
 ```
 
 ## 🔐 Seguridad / Security
