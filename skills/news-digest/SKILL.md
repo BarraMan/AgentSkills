@@ -86,6 +86,13 @@ en este orden exacto (publicado en BarraMan/AgentSkills):
 - **Cuerpo HTML, NUNCA Markdown** (Markdown se ve como un muro de texto plano).
 - **Acentos no negociables**: n, tildes (a e i o u) correctos (UTF-8). Verificar
   contando acentos en el HTML decodificado; nunca pre-estrillar a ASCII.
+- **Resumen y titular en español de México (traducción obligatoria)**: el resumen
+  (renglon 3) y el titular (renglon 1) se redactan SIEMPRE en español de Mexico
+  (ortografia y tono de MX), sin importar el idioma original de la fuente. Si el
+  titular/resumen vienen en otro idioma (ingles, etc.), traducirlos al español de
+  Mexico — nunca dejarlos en el idioma original. La caratula del renglon 2 enlaza
+  igualmente al articulo original (en su idioma). Verificar que ningun resumen ni
+  titular aparezca en ingles u otro idioma en el HTML decodificado.
 - **Cada item lleva link al articulo completo** (correccion real de BarraMan): se
   esperaba un digest de 10 titulares sin URL. Esperar 2 links por item (caratula +
   Leer completa). Verificar decodificando la parte text/html (va base64 CTE: grep
